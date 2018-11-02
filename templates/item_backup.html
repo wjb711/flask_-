@@ -1,0 +1,26 @@
+﻿<html>
+<meta http-equiv="refresh" content="3"/>
+<iframe src="/" width="200" height="200"></iframe>
+
+  <body>
+    <h1>Hi,快来聊天吧!</h1>
+    {% for post in posts %}
+    <p>look here</p>
+    {% endfor %}
+
+{% for book in content %}
+<tr>
+
+<br><td>{{ book }}</td></br>
+
+</tr>
+{% endfor %}
+
+<form action="/signin" method="post">
+<p><this is from template></p>
+<p><input name="username"></p>
+<p><input name="password" type="password"></p>
+<p><button type="submit">Sign In template</button></p>
+</form>
+  </body>
+</html>
